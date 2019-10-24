@@ -1,4 +1,4 @@
-# Scout Crooke, 10/21/19, This program runs a guessing game
+# Scout Crooke, 10/24/19, This program plays a number guessing game with the user
 
 import random
 
@@ -18,9 +18,9 @@ while True:
             guess = int(input("What is your number guess?"))
             tries += 1
             if guess > num:
-                print("Your number is to high")
+                print("Your number is to high. Try again!")
             elif guess < num:
-                print("Your number is too low")
+                print("Your number is too low. Try again!")
             elif guess == num:
-                print("Awesome! You guessed my number in", tries, "guesses!")
+                print("Awesome! You guessed my number in", tries, "tries! Thanks for playing!")
                 break
