@@ -75,15 +75,30 @@ import random
 # print("The average of your numbers was", total/times)
 # print("The product of your numbers was", product)
 
-steps = 0
-num = int(input("What number do you want to use?"))
-while num != 1:
-    print(num)
-    if num % 2 ==0:
-        num = num / 2
-    else:
-        num = (num * 3) + 1
-    steps += 1
-print(num)
-print("It took you", steps, "steps")
+# steps = 0
+# num = int(input("What number do you want to use?"))
+# while num != 1:
+#     print(num)
+#     if num % 2 ==0:
+#         num = num / 2
+#     else:
+#         num = (num * 3) + 1
+#     steps += 1
+# print(num)
+# print("It took you", steps, "steps")
 
+# Project Euler Problem 14
+for num in range(2, 999999):
+    steps = 0
+    biggest_num = 0
+    num = int(input("What number do you want to use?"))
+    while num != 1:
+        print(num)
+        if num % 2 ==0:
+            num = num / 2
+        else:
+            num = (num * 3) + 1
+        steps += 1
+    if num > biggest_num:
+        biggest_num = num
+    print(num)
